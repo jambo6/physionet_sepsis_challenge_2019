@@ -1,0 +1,37 @@
+# Macros
+#! DATA_DIR=data/test
+#! DATA_DIR=/scratch/morrill/physionet2019/data
+
+
+setup_data:
+  help: Main dataframe setup methods from the raw data to useable form
+
+  make_dataframe:
+    help: Makes a dataframe from the raw data, saves in interim
+    dependencies:
+      - $DATA_DIR/raw/training/*.psv
+      - src/data/make_dataframe.py
+    formula:
+      python src/data/make_dataframe.py
+    output:
+      - $DATA_DIR/interim/from_raw/df.pickle
+      - $DATA_DIR/interim/from_raw/df_insight.pickle
+      - $DATA_DIR/processed/labels.pickle
+
+
+train_models:
+  help: Trains the different models
+
+  cox:
+    help: Cox model trainer
+    dependencies:
+      - $DATA_DIR/interim/munged/df.pickle
+      - src/models/cox.py
+    formula:
+      python src/models/cox.py
+    output:
+      - models/cox/*.pickle
+      - models/cox/*.dill
+
+
+Sa

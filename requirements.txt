@@ -1,0 +1,13 @@
+dill==0.2.9
+esig==0.6.31
+iisignature==0.23
+joblib==0.13.2
+nevergrad==0.2.2
+numpy==1.16.3
+pandas==0.24.2
+pymongo==3.8.0
+lightgbm==2.2.3
+sacred==0.7.5
+scikit-learn==0.20.3
+scipy==1.2.1
+sty==1.0.0b9

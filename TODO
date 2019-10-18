@@ -1,0 +1,20 @@
+    ** Train a number of classifiers with different lookbacks. On the training set evaluate the best performing lookback
+    over a window of timepoints, use the best lookback window for the set of timepoints
+
+    !** Setup again predicting 1s to end if score > thresh. ALSO could do if t > T predict 1.
+
+    !** Remove values > 95%-ile replace with median. See if helps.
+
+    ** Consider each SOFA component separately and the paths of each.
+
+    ** Compute the signature over lookback windows t=4 to 24, then take the max value of any signature terms over all
+    window sizes
+
+    !** For longtime t > 40, add baslines to the most important features
+
+    !** Add the rolling mean of SBP over the last 6 hours / 3hours as a possible smoothing mechanism
+
+    ** Use 2 gap leadlag
+
+    ** Feature selection (use boruta) on the 0-1 labelled (eventual vs not) data. Then save the features and use in full
+    algo.
