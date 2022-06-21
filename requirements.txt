@@ -3,7 +3,7 @@ esig==0.6.31
 iisignature==0.23
 joblib==0.13.2
 nevergrad==0.2.2
-numpy==1.16.3
+numpy==1.22.0
 pandas==0.24.2
 pymongo==3.8.0
 lightgbm==2.2.3
