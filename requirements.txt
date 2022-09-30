@@ -1,7 +1,7 @@
 dill==0.2.9
 esig==0.6.31
 iisignature==0.23
-joblib==0.13.2
+joblib==1.2.0
 nevergrad==0.2.2
 numpy==1.16.3
 pandas==0.24.2
