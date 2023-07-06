@@ -9,5 +9,5 @@ pymongo==3.8.0
 lightgbm==2.2.3
 sacred==0.7.5
 scikit-learn==0.20.3
-scipy==1.2.1
+scipy==1.10.0
 sty==1.0.0b9
